@@ -1,1 +1,235 @@
-Have to complete this by Friday.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Contribution: AI Agent Stock Prediction</title>
+  <style>
+    :root {
+      --primary-color: #4e54c8;
+      --secondary-color: #8f94fb;
+      --accent-color: #ff6b6b;
+      --bg-light: #f5f6fa;
+      --text-color: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: var(--accent-color);
+      color: #fff;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent-color);
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+    }
+    .card-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    .card-list li {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: var(--bg-light);
+      border-left: 4px solid var(--accent-color);
+      border-radius: 5px;
+    }
+    .screenshot {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 5px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Contribution: AI Agent Stock Prediction</h1>
+  </header>
+
+  <section id="intro">
+    <h2>Introduction</h2>
+    <p>
+      I built an AI-driven Stock Prediction system centered on the Chande Momentum Oscillator (CMO). 
+      My contributions spanned developing the CMO calculation engine, integrating real-time and historical data fetchers, 
+      embedding CrewAI agents for BUY/SELL/HOLD recommendations, authoring unit/integration tests, and constructing a robust backtesting framework.
+    </p>
+  </section>
+
+  <section id="overview">
+    <h2>Project Overview</h2>
+    <p>
+      This end-to-end Streamlit app uses Python, yfinance, and CrewAI (with a ChatOpenAI backend) to deliver momentum-based trading recommendations. 
+      Data ingestion modules fetch stock prices, the CMOCalculator computes momentum, CrewAI agents analyze results using browser, calculator, and SEC tools, 
+      and a backtesting suite validates strategy performance.
+    </p>
+  </section>
+
+  <section id="sprint-objectives">
+    <h2>Sprint Objectives Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sprint</th>
+          <th>Objective</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sprint 1</td>
+          <td>Minimal Viable Product: basic CMO calculation & data fetching</td>
+        </tr>
+        <tr>
+          <td>Sprint 2</td>
+          <td>UI customization & real-time/historical data integration</td>
+        </tr>
+        <tr>
+          <td>Sprint 3</td>
+          <td>Unit/integration tests and performance & scalability validation</td>
+        </tr>
+        <tr>
+          <td>Sprint 4</td>
+          <td>Integration testing and end-to-end backtesting framework</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="user-stories-tasks">
+    <h2>User Stories &amp; Tasks Summary</h2>
+    <ul class="card-list">
+      <li><strong>Sprint 1:</strong> Task CMO.1 – Implement indicator calculation (Actual 29 h)</li>
+      <li><strong>Sprint 2:</strong> Task CMO.6 – Design &amp; develop UI (Actual 26 h); Task CMO.8 – CrewAI decision support (Actual 30 h)</li>
+      <li><strong>Sprint 3:</strong> Task CMO.10 – Performance &amp; scalability tests (Actual 26 h); Task CMO.8 – Unit &amp; integration tests (Actual 42 h)</li>
+      <li><strong>Sprint 4:</strong> Task CMO.10 – Testing code development (Actual 14 h); Task CMO.11 – Backtesting framework (Actual 31 h)</li>
+    </ul>
+  </section>
+
+  <section id="contributions">
+    <h2>Evidence of Contributions</h2>
+    <p>Explore the complete codebase on GitHub:</p>
+    <a href="https://github.com/karthikgottimukkula/Gottimukkula-AI-Agent-Stock-Prediction" class="button" target="_blank" rel="noopener">View Repository</a>
+    <p>Key screenshots:</p>
+    <img src="screenshots/cmo_calculation.png" alt="CMO Calculation Interface" class="screenshot">
+    <img src="screenshots/ai_decision.png" alt="AI Recommendation Output" class="screenshot">
+  </section>
+
+  <section id="appendix">
+    <h2>Appendix</h2>
+
+    <h3>A. Commit History</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Commit</th>
+          <th>Description</th>
+          <th>Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>02/03/2025</td>
+          <td>d89564d059fbe94ac71e75aae28aacaa5aa6b042</td>
+          <td>Add CMO code for fetching stock data and calculating the values</td>
+          <td>CMO.1</td>
+        </tr>
+        <tr>
+          <td>02/08/2025</td>
+          <td>2296b7194d0ae7414ad80e662d34bf6f782226ee</td>
+          <td>Customization features for CMO Indicator</td>
+          <td>CMO.6</td>
+        </tr>
+        <tr>
+          <td>02/15/2025</td>
+          <td>1c466e3cfbbed4199918bfc5b76ad2138fbbc7e3</td>
+          <td>CMO real-time data using yfinance</td>
+          <td>CMO.6</td>
+        </tr>
+        <tr>
+          <td>03/17/2025</td>
+          <td>3c407c4c34a92725d8277d9cf411c42e15587af0</td>
+          <td>Updated CMO code with Crew AI agents</td>
+          <td>CMO.8</td>
+        </tr>
+        <tr>
+          <td>04/01/2025</td>
+          <td>cfeed0704005f39d03bc20eb74d9e6b29f3432b9</td>
+          <td>CMO testing code</td>
+          <td>CMO.10</td>
+        </tr>
+        <tr>
+          <td>04/22/2025</td>
+          <td>fc22b9a8e2e2df6f91152aaac1ce5f09023f571a</td>
+          <td>CMO indicator backtesting with Crew AI agent</td>
+          <td>CMO.11</td>
+        </tr>
+        <tr>
+          <td>04/27/2025</td>
+          <td>870564d6f25dfbf3f02992412b3e799d80941588</td>
+          <td>Updated backtest code for CMO</td>
+          <td>CMO.11</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>B. Task Hours Documents</h3>
+    <ul>
+      <li><a href="Gottimukkula Sprint 1 Task Hours Achieved.docx" download>Sprint 1 Task Hours</a></li>
+      <li><a href="Gottimukkula Sprint 2 Task Hours Achieved.docx" download>Sprint 2 Task Hours</a></li>
+      <li><a href="Gottimukkula Sprint 3 Task Hours Achieved.docx" download>Sprint 3 Task Hours</a></li>
+      <li><a href="Gottimukkula Sprint 4 Task Hours Achieved.docx" download>Sprint 4 Task Hours</a></li>
+    </ul>
+  </section>
+</body>
+</html>
+
